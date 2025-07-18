@@ -1,4 +1,9 @@
+using DotNetAiStudy.Api.Extensions;
+using Scalar.AspNetCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.AddOpenAI();
 
 builder.Services.AddControllers();
 
@@ -9,6 +14,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    app.MapScalarApiReference();
 }
 
 app.UseAuthorization();
