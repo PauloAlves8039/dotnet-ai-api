@@ -1,9 +1,12 @@
 using DotNetAiStudy.Api.Extensions;
+using DotNetAiStudy.Api.Services;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddOpenAI();
+
+builder.Services.AddSingleton<ChatService>();
 
 builder.Services.AddControllers();
 
