@@ -7,16 +7,20 @@
 
 ## 💻 Project
 
-This repository contains a Web API for studies with `DotNetAI` , `OpenAI` and others.
+This repository contains a Web API for studies with `DotNetAI` , `OpenAI` and others. 
+The project's source code is based on the course: [Inteligência Artificial c .NET AI DeepSeek OpenAI e ChatGPT](https://www.udemy.com/course/net-ai-com-aspnet-openai-chatgpt-deepseek-ollama-mcp-gemini-e-grok/) 
 
 ## 🚀 Technologies and Tools
 
 This project was developed using the following technologies:
 
 - **Backend:**  
-  - `.NET 8.0`
+  - `.NET 10.0`
   - `ASP.NET Core WebAPI`
   - `C#`
+  - `OpenAI Platform`
+  - `Openai DotNet`
+  - `Scalar`
 
  ## 💾 How to Run Locally
 
@@ -33,6 +37,10 @@ dotnet restore
 # Run the project
 dotnet run
 ```
+
+## 📷 Screenshot
+
+<p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-ai-api/blob/DAS-BE-05/src/DotNetAiStudy.Api/Resources/Images/screenshot.png?raw=true" /></p>
 
 ## 👤 Author
 
