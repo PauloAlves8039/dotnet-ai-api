@@ -22,7 +22,34 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddControllers();
 
-builder.Services.AddOpenApi();
+builder.Services.AddOpenApi(options =>
+{
+    options.AddDocumentTransformer((document, context, _) =>
+    {
+        document.Info = new()
+        {
+            Title = ".NET AI Study API",
+            Version = "v1",
+            Description = """  
+               This API provides AI-based features such as chat, image generation,  
+               recipe creation and audio transcription.  
+               """,
+            Contact = new()
+            {
+                Name = "Paulo Alves",
+                Email = "pj38alves@gmail.com",
+                Url = new Uri("https://github.com/PauloAlves8039")
+            },
+            License = new()
+            {
+                Name = "License",
+                Url = new Uri("https://github.com/PauloAlves8039")
+            },
+            TermsOfService = new Uri("https://github.com/PauloAlves8039")
+        };
+        return Task.CompletedTask;
+    });
+});
 
 var app = builder.Build();
 
