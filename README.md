@@ -1,4 +1,4 @@
-<h1 align="center">DotNet AI API</h1>
+<h1 align="center">🌀 DotNet AI API</h1>
 
 <p align="center">
   <a href="https://learn.microsoft.com/pt-br/dotnet/"><img alt="DotNet 8" src="https://img.shields.io/badge/.NET-5C2D91?logo=.net&logoColor=white&style=for-the-badge" /></a>
@@ -15,11 +15,11 @@ The project's source code is based on the course: [Inteligência Artificial c .N
 This project was developed using the following technologies:
 
 - **Backend:**  
-  - `.NET 10.0`
+  - `.NET 10`
   - `ASP.NET Core WebAPI`
   - `C#`
   - `OpenAI Platform`
-  - `Openai DotNet`
+  - `OpenAi DotNet`
   - `Scalar`
 
 ## 📌 Technical Decisions
